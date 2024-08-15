@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+  </head>
+  <body
+    class="w-screen h-screen bg-black flex justify-center items-center overflow-hidden transform-3d [&_div]:transform-3d perspective-midrange"
+  >
+    <div
+      id="app"
+      class="w-[400px] h-[600px] ring-4 ring-white rotate-y-30 hover:rotate-y--30 transition-transform ease-out duration-500 relative *:pointer-events-none rounded-2xl"
+      style="box-shadow: 0 0 0 9999px black"
+    >
+      <img
+        class="absolute max-w-none size-[1200px] top-1/2 left-1/2 -translate-1/2 -translate-z-80"
+        src="https://picsum.photos/seed/demo-apps-css3d-pic-1/1200/1200"
+        alt="pic 1"
+      />
+      <div
+        class="bg-black/60 text-white backdrop-blur-md p-8 text-6xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-z-20 whitespace-nowrap"
+      >
+        MAIN TEXT
+      </div>
+      <!-- ======== -->
+      <div
+        class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-white text-9xl translate-z-20"
+      >
+        FRONT TEXT
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
